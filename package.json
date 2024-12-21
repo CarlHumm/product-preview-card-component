@@ -1,0 +1,22 @@
+{
+  "name": "product-preview-card-component-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch src/styles.scss dist/styles.css",
+    "sass": "sass src/styles.scss dist/styles.css",
+    "postcss": "postcss dist/styles.css --output dist/styles.css",
+    "build": "npm run sass && npm run postcss"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "cssnano": "^7.0.6",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.83.0"
+  }
+}

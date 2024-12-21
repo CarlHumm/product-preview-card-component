@@ -1,0 +1,131 @@
+
+
+@use '../variables';
+@use '../mixins' as *;
+
+/*
+ Component file for Product Card. 
+ Description: Styles related to the product-card component will be here.
+*/
+
+.product {
+    --card-radius: 0.5rem;
+    --card-w-max: 21.438rem;
+    --card-w-min: 11.25rem;
+    --card-thumb-h: 18.75rem;
+    --card-shadow: 10px 10px 35px rgba(204, 193, 181, 0.4);
+    
+    position: relative;
+    width: clamp(var(--card-w-min), 90%, var(--card-w-max));
+    background-color: var(--white);
+    border-radius: var(--card-radius);
+    overflow: hidden;
+    transition:0.5s ease-in-out;
+
+    &:hover {
+        box-shadow: var(--card-shadow);
+    }
+
+    &-thumbnail {
+        display: flex;
+        min-block-size: var(--card-thumb-h);
+        overflow: hidden;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        padding: 2rem; 
+    }
+
+    &__category {
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-family: var(--body-family);
+        font-size: var(--body-size-small);
+        color: var(--grayish-blue);
+    }
+
+    &__title {
+        margin-block: 1.25rem 1.5rem;
+        line-height:1;
+    }
+
+    &__description {
+        line-height: 1.5;
+        margin-block: 0;
+    }
+
+    &-pricing {
+        margin-block-start: 1.813rem;
+        margin-block-end: 1.875rem;
+        display: flex;
+        flex-wrap:wrap;
+        align-items:center;
+        gap:1rem;
+    }
+
+
+    &__price {
+        font-size: var(--heading-size);
+        font-family: var(--heading-family);
+        color: var(--dark-cyan);
+        margin: 0;
+
+        &--discounted {
+            color: var(--grayish-blue);
+            font-size: 0.813rem;
+            font-family: var(--body-family);
+        }
+    }
+
+    .cart-btn {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:0.75rem;
+        padding: 0.9rem 1rem;
+        background-color: var(--dark-cyan);
+        border-radius: var(--card-radius);
+        font-family: var(--body-family);
+        color: var(--white);
+        font-size: 0.875rem;
+        &:hover, &:focus-visible {
+            background: var(--darker-cyan);
+        }
+
+        svg {
+            font-size: 1em;
+        }
+    }
+
+}
+
+// MEDIA QUERIES
+.product {
+    @include for-tablet-and-greater {
+        --card-w-max: 37.5rem;
+        --card-thumb-h: auto;
+        display: flex;
+    }
+
+    &-content {
+        @include for-tablet-and-greater {
+            flex: 1 0 18.75rem;
+        }
+    }
+
+    &__title {
+        @include for-tablet-and-greater {
+            max-inline-size: 10ch;
+        }
+    }
+}
+

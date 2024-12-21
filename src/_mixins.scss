@@ -1,0 +1,15 @@
+
+// 1. ALIGNMENT
+
+// 1.1 - CENTERING
+@mixin place-center {
+    max-width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+// 2. MEDIA QUERY MIXINS
+  @mixin for-tablet-and-greater {
+    @media (min-width: 600px) { @content; }
+  }

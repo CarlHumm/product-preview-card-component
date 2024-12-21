@@ -1,0 +1,35 @@
+// Headings
+
+
+
+
+// THIS IS SUPPOSE TO BE MEDIUM NOT SEMIBOLD
+@font-face {
+    font-family: "Montserrat";
+    src: 
+    url("../src/fonts/Montserrat/Montserrat-Medium-subset.woff2") format("woff2"),
+    url("../src/fonts/Montserrat/Montserrat-Medium-subset.ttf") format("truetype");
+    font-weight: 500;
+    font-display:swap;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: 
+    url("../src/fonts/Montserrat/Montserrat-Bold-subset.woff2") format("woff2"),
+    url("../src/fonts/Montserrat/Montserrat-Bold-subset.ttf") format("truetype");
+    font-weight: 700;
+    font-display:swap;
+}
+
+// -------------------- WHAT EXACT FONT IS IT? THE SUBSET LOOKS SQUISHED, IS IT A SOFTER VERSION, COMPARE THE FIGMA FILE TO FONTS.
+@font-face {
+    font-family: "Fraunces";
+    src: 
+    url("../src/fonts/Fraunces/Fraunces_72pt-Bold-subset.woff2") format("woff2"),
+    url("../src/fonts/Fraunces/Fraunces_72pt-Bold-subset.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
