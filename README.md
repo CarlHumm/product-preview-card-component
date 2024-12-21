@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/product-preview-card-component-html-css-xwRYl-Aqvi)
-- Live Site URL: [Add live site URL here](https://carlhumm.github.io/product-preview-card-component/)
+- Solution URL: [https://www.frontendmentor.io/solutions/product-preview-card-component-html-css-xwRYl-Aqvi](https://www.frontendmentor.io/solutions/product-preview-card-component-html-css-xwRYl-Aqvi)
+- Live Site URL: [https://carlhumm.github.io/product-preview-card-component/](https://carlhumm.github.io/product-preview-card-component/)
 
 
 ### Built with
