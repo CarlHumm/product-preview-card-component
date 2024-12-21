@@ -16,7 +16,7 @@
     --card-shadow: 10px 10px 35px rgba(204, 193, 181, 0.4);
     
     position: relative;
-    width: clamp(var(--card-w-min), 90%, var(--card-w-max));
+    width:clamp(var(--card-w-min), 90%, var(--card-w-max));
     background-color: var(--white);
     border-radius: var(--card-radius);
     overflow: hidden;

@@ -1,2 +1,519 @@
-*,:after,:before{box-sizing:border-box}html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;-moz-appearance:button;appearance:button;border:0;cursor:pointer;outline:0}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;-moz-appearance:textfield;appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden],template{display:none}:root{--darker-cyan:#1a4233;--dark-cyan:#3c8067;--cream:#f2ebe3;--very-dark-blue:#1c232b;--grayish-blue:#6c7289;--white:#fff;--root-size:16;--body-size-small:12px;--body-size:0.875rem;--heading-size:clamp(1.8rem,0.5vw + 1.5rem,2rem);--heading-family:"Fraunces",serif;--body-family:"Montserrat",sans-serif}.product{--card-radius:0.5rem;--card-w-max:21.438rem;--card-w-min:11.25rem;--card-thumb-h:18.75rem;--card-shadow:10px 10px 35px hsla(31,18%,75%,.4);background-color:var(--white);border-radius:var(--card-radius);overflow:hidden;position:relative;transition:.5s ease-in-out;width:clamp(var(--card-w-min),90%,var(--card-w-max))}.product:hover{box-shadow:var(--card-shadow)}.product-thumbnail{display:flex;min-block-size:var(--card-thumb-h);overflow:hidden}.product__image{height:100%;-o-object-fit:cover;object-fit:cover;width:100%}.product-content{display:flex;flex-direction:column;justify-content:space-between;padding:2rem}.product__category{color:var(--grayish-blue);font-family:var(--body-family);font-size:var(--body-size-small);letter-spacing:5px;text-transform:uppercase}.product__title{line-height:1;margin-block:1.25rem 1.5rem}.product__description{line-height:1.5;margin-block:0}.product-pricing{align-items:center;display:flex;flex-wrap:wrap;gap:1rem;margin-block-end:1.875rem;margin-block-start:1.813rem}.product__price{color:var(--dark-cyan);font-family:var(--heading-family);font-size:var(--heading-size);margin:0}.product__price--discounted{color:var(--grayish-blue);font-family:var(--body-family);font-size:.813rem}.product .cart-btn{align-items:center;background-color:var(--dark-cyan);border-radius:var(--card-radius);color:var(--white);display:flex;font-family:var(--body-family);font-size:.875rem;gap:.75rem;justify-content:center;padding:.9rem 1rem}.product .cart-btn:focus-visible,.product .cart-btn:hover{background:var(--darker-cyan)}.product .cart-btn svg{font-size:1em}@media (min-width:600px){.product{--card-w-max:37.5rem;--card-thumb-h:auto;display:flex}.product-content{flex:1 0 18.75rem}.product__title{max-inline-size:10ch}}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:500;src:url(../src/fonts/Montserrat/Montserrat-Medium-subset.woff2) format("woff2"),url(../src/fonts/Montserrat/Montserrat-Medium-subset.ttf) format("truetype")}@font-face{font-display:swap;font-family:Montserrat;font-weight:700;src:url(../src/fonts/Montserrat/Montserrat-Bold-subset.woff2) format("woff2"),url(../src/fonts/Montserrat/Montserrat-Bold-subset.ttf) format("truetype")}@font-face{font-display:swap;font-family:Fraunces;font-style:normal;font-weight:700;src:url(../src/fonts/Fraunces/Fraunces_72pt-Bold-subset.woff2) format("woff2"),url(../src/fonts/Fraunces/Fraunces_72pt-Bold-subset.ttf) format("truetype")}body{background:var(--cream)}main{display:grid;max-width:100vw;min-height:100vh;place-items:center}img{max-width:100%}h1,h2,h3,h4{color:var(--very-dark-blue);font-family:var(--heading-family);font-size:var(--heading-size);font-weight:700}p{color:var(--grayish-blue);font-family:var(--body-family);font-size:var(--body-size)}.visually-hidden:not(:focus):not(:active){clip:rect(0 0 0 0);clip-path:inset(50%);height:1px;overflow:hidden;position:absolute;white-space:nowrap;width:1px}::-moz-selection{background-color:var(--darker-cyan);color:var(--white)}::selection{background-color:var(--darker-cyan);color:var(--white)}.attribution{background-color:rgba(95,153,131,.07);color:var(--darker-cyan);font-family:var(--body-family);font-size:var(--body-size-small);font-weight:700;padding-block:1rem;text-align:center;text-transform:uppercase}.attribution a{color:var(--dark-cyan);font-weight:700}
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  appearance: button;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+:root {
+  --darker-cyan: hsl(157, 43%, 18%);
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  --root-size: 16;
+  --body-size-small: 12px;
+  --body-size: 0.875rem;
+  --heading-size: clamp(1.8rem, 0.5vw + 1.5rem, 2rem);
+  --heading-family: "Fraunces", serif;
+  --body-family: "Montserrat", sans-serif;
+}
+
+/*
+ Component file for Product Card. 
+ Description: Styles related to the product-card component will be here.
+*/
+.product {
+  --card-radius: 0.5rem;
+  --card-w-max: 21.438rem;
+  --card-w-min: 11.25rem;
+  --card-thumb-h: 18.75rem;
+  --card-shadow: 10px 10px 35px rgba(204, 193, 181, 0.4);
+  position: relative;
+  width: clamp(var(--card-w-min), 90%, var(--card-w-max));
+  background-color: var(--white);
+  border-radius: var(--card-radius);
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+.product:hover {
+  box-shadow: var(--card-shadow);
+}
+.product-thumbnail {
+  display: flex;
+  min-block-size: var(--card-thumb-h);
+  overflow: hidden;
+}
+.product__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.product-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.product__category {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: var(--body-family);
+  font-size: var(--body-size-small);
+  color: var(--grayish-blue);
+}
+.product__title {
+  margin-block: 1.25rem 1.5rem;
+  line-height: 1;
+}
+.product__description {
+  line-height: 1.5;
+  margin-block: 0;
+}
+.product-pricing {
+  margin-block-start: 1.813rem;
+  margin-block-end: 1.875rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+.product__price {
+  font-size: var(--heading-size);
+  font-family: var(--heading-family);
+  color: var(--dark-cyan);
+  margin: 0;
+}
+.product__price--discounted {
+  color: var(--grayish-blue);
+  font-size: 0.813rem;
+  font-family: var(--body-family);
+}
+.product .cart-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.9rem 1rem;
+  background-color: var(--dark-cyan);
+  border-radius: var(--card-radius);
+  font-family: var(--body-family);
+  color: var(--white);
+  font-size: 0.875rem;
+}
+.product .cart-btn:hover, .product .cart-btn:focus-visible {
+  background: var(--darker-cyan);
+}
+.product .cart-btn svg {
+  font-size: 1em;
+}
+
+@media (min-width: 600px) {
+  .product {
+    --card-w-max: 37.5rem;
+    --card-thumb-h: auto;
+    display: flex;
+  }
+}
+@media (min-width: 600px) {
+  .product-content {
+    flex: 1 0 18.75rem;
+  }
+}
+@media (min-width: 600px) {
+  .product__title {
+    max-inline-size: 10ch;
+  }
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../src/fonts/Montserrat/Montserrat-Medium-subset.woff2") format("woff2"), url("../src/fonts/Montserrat/Montserrat-Medium-subset.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../src/fonts/Montserrat/Montserrat-Bold-subset.woff2") format("woff2"), url("../src/fonts/Montserrat/Montserrat-Bold-subset.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Fraunces";
+  src: url("../src/fonts/Fraunces/Fraunces_72pt-Bold-subset.woff2") format("woff2"), url("../src/fonts/Fraunces/Fraunces_72pt-Bold-subset.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  background: var(--cream);
+}
+
+main {
+  max-width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--heading-family);
+  font-size: var(--heading-size);
+  font-weight: 700;
+  color: var(--very-dark-blue);
+}
+
+p {
+  font-size: var(--body-size);
+  font-family: var(--body-family);
+  color: var(--grayish-blue);
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+::selection {
+  background-color: var(--darker-cyan);
+  color: var(--white);
+}
+
+.attribution {
+  background-color: hsla(157, 23.16%, 48.71%, 0.07);
+  padding-block: 1rem;
+  font-family: var(--body-family);
+  font-size: var(--body-size-small);
+  color: var(--darker-cyan);
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.attribution a {
+  font-weight: bold;
+  color: var(--dark-cyan);
+}
+
 /*# sourceMappingURL=styles.css.map */
